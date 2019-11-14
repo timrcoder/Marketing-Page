@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+body {
+  background: #f3f3f3;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  margin: 25px 0;
+  color: #16646f;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  min-height: 40px;
+  position: fixed;
+  width: 100%;
+  background: #0A2239;
+  padding: 30px 0;
+  z-index: 9999;
+}
+
+// .logo {
+//   background: url('http://synergiste.com/img/logo.png');
+//   width: 150px;
+//   height: 35px;
+//   display: block;
+//   float: left;
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+// }
+
+#topRight {
+  line-height: 35px;
+  float: right;
+  .phone {
+    font-size: 21px;
+    margin-left: 10px;
+    color: #16646f + #222222;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 35px;
+  }
+}
+
+#banner {
+  background: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  border: 1px solid #ddd;
+  padding: 40px;
+  top: 120px;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  p, ul, li {
+    font-size: 17px;
+  }
+  ul li {
+    margin: 10px 0;
+    list-style-type: none;
+    line-height: 32px; //
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    &:before {
+      content: '\f373';
+      font-family: 'Ionicons', sans-serif;
+      font-size: 24px;
+      margin-right: 10px;
+      line-height: 32px;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  ul {
+    margin-bottom: 30px;
+  }
+}
+
+// This is the gray box w/ diag stripes
+
+// #banner-inner {
+//   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAUSURBVBhXY0AG/4EAyiSaw8DAAAAeQg/xKLGGvgAAAABJRU5ErkJggg==) repeat;
+//   height: 100% !important;
+// }
