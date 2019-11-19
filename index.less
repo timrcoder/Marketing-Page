@@ -1,22 +1,4 @@
-// @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
-// @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
-// @breakpoint:40em;
-// @displaypoint:40.01em;
-
-// @navbg:fadeout(#313131, 15%);
-// @itemhover:fadeout(#6C1621, 45%);
-// @linkcolor:#ccc;
-
-// /* fontawesome */
-// [class*="fontawesome-"]:before {
-//   font-family: 'FontAwesome', sans-serif;
-// }
-// =============================================================
-// background: url(https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80) no-repeat center center fixed; 
-// 
-// https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1351&q=80
-// ==============================================================
 body {
 font-family: lato;
   background: url('https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1351&q=80'
@@ -34,9 +16,8 @@ font-family: lato;
   height: 200px;
   border-radius: 8px;
   box-shadow: 3px 2px 3px #FAF189;
-
-
 }
+
 .logo  img{
     width: 120px;
     height: 120px;
@@ -50,12 +31,13 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  border: 5px solid green;
+  // border: 5px solid green;
   background: #8E2735;
   width: 56vw;
   height: 45px;
   margin: 0 auto;
   margin-top: 20px;
+  padding: 6px;
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 3px 2px 3px #FAF189;
@@ -67,15 +49,8 @@ nav {
   // justify-content: space-around;
   flex-direction: column;
   margin: 0 auto;
-  // border: 5px solid green;
-  // background: #8E2735;
-  // width: 50vw;
-  // height: 35px;
-  // margin: 0 auto;
-  // margin-top: 20px;
+
   font-weight: bold;
-  // border-radius: 8px;
-  // box-shadow: 3px 2px 3px #FAF189;
   font-family: Sans Serif Pro;
   text-align: center;
 }
@@ -89,7 +64,8 @@ nav {
   text-align: center;
   color :#FAF189;
 }
-a {
+a {    
+  // ###############################################################################################################################
   text-decoration: none;
   font-size: 15px;
   margin: 0 20px;
@@ -99,9 +75,7 @@ a {
   border-right: 25px solid transparent;
   color: #FAF189;
 }
-
-a:hover {
-  // padding: 6px 3px;
+a:hover {//   THIS STYLES THE MENU LINKS   NOTE    THIS STYLES THE MENU LINKS        THIS STYLES THE MENU LINKS 
     transition: 0.6s ease;
   border-top: 4px solid #FAF189;;
   border-bottom: 4px solid #FAF189;;
@@ -112,26 +86,22 @@ a:hover {
   color:#0A2239;
   
 }
-
-
 @media (max-width: 750px) {
   .nav {
     display:flex;
     align-items: center;
     flex-direction: column;
-    height: 120px;
+    height: 130px;
     margin-right: 25px;
     width: 170px;
-   
+   padding: 3px;
     margin: 0 auto;
- margin-top: 25px;
+ margin-top: 18px;
   }
 }
 @media (max-width: 750px) {
   .logo img{
     display:flex;
-    // flex-direction: column;
-    // height: 120px;
     margin-left: 5px;
     margin-right: 3px;
   }
@@ -139,9 +109,20 @@ a:hover {
 
 @media (max-width: 570px) {
   .quote{
-    display:none;
+   font-size: 13px;
   }
 }
+
+
+.btn-info-box {
+  border: 5px solid pink;
+  width: 50px;
+  height: 300px;
+  display: flex;
+}
+
+
+
 
 // =======================================================
 // NOTE    DROP-DOWN     DROP-DOWN       DROP-DOWN 
@@ -157,8 +138,307 @@ a:hover {
   100%{ opacity:1; transform:translateY(0px); }
 }
 // =======================================================
-
+// ========================================================
 
 // NOTE    WORD FLIP      WORD FLIP     WORD FLIP
+// ========================================================
+// ========================================================
+
+// ==================================================================
+// ==================================================================
+//      BUTTON ABOVE PHOTOS     NOTE      BUTTON ABOVE PHOTOS   and  INFO / BUTTON BOX
+// ==================================================================
+// ==================================================================
+button {
+  width: 130px;
+  height: 25px;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-left: 33%;
+  margin-bottom: 5px;
+  opacity: 0.6;
+  border: 2px solid #6C1621; 
+  font-weight: bold;
+  background: #0A2239; 
+  color: #FAF189; 
+  // padding-bottom: 8px;
+}
+button:hover {
+  opacity: 1;
+  height: 28px;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//========================================================================
+//      Styles photo containers    NOTE     Styles photo containers     
+// =======================================================================
+.container {
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+.container img {
+  object-fit: fill;
+  height: 250px;
+}
+@media screen and (max-width: 640px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    width: 33.33333%;
+  }
+}
+.container .title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+//========================================================================
+// CONTENT      CONTENT  NOTE   CONTENT     CONTENT     
+// =======================================================================
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out 0s;
+  -moz-transition: all 2s ease-in-out 0s;
+  transition: all 2s ease-in-out 0s;
+}
+.content:hover .content-overlay {
+  opacity: 1;
+  border-radius: 8px;
+}
+.content-image {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid black;
+  box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.6);
+  border: 10px solid;
+  border-top-color: #0A2239;
+  border-left-color: #0A2239;
+  border-bottom-color: #0A2239;
+  border-right-color: #0A2239;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  color: white;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 1s ease-in-out 0s;
+}
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+.fadeIn-bottom {
+  top: 80%;
+}
+.fadeIn-top {
+  top: 20%;
+}
+.fadeIn-left {
+  left: 20%;
+}
+.fadeIn-right {
+  left: 80%;
+}
 
 
+h4 {
+  text-align: center;
+  margin-top: 400px;
+  color: #6C1621; 
+}
+// ===========================================================================
+//          Button inside info box       NOTE           Button inside info box    
+// ===========================================================================
+
+// .button {
+//   background-color: #8E2735;
+//   border: none;
+//   color: #FAF189; 
+//   padding: 5px 30px 15px 30px;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   font-size: 16px;
+//   margin-left: 50%;
+//   margin-top: 30%;
+//   cursor: pointer;
+//   transition-duration: 0.4s;
+//   border-radius: 50%;
+// }
+
+
+// .button2:hover {
+//   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+//   color: #FAF189;
+//   background:#0A2239; 
+// }
+
+
+
+// =====================================
+// #FAF189; yelloW
+// #0A2239; blue
+// #6C1621;  red
+
+//========================================================================
+// SOCIAL-MEDIA      SOCIAL-MEDIA   NOTE   SOCIAL-MEDIA      SOCIAL-MEDIA      
+// =======================================================================
+
+
+
+// ===========================================================================================================
+
+
+// textarea {
+//   resize: none;
+// }
+
+// .text {
+// color: white;
+// font-size: 20px;
+// position: absolute;
+// top: 50%;
+// left: 50%;
+// // transform: translate(-50%, -50%);
+// -ms-transform: translate(-50%, -50%);
+// white-space: nowrap;
+// }
+
+// @charset "UTF-8";
+
+// .svg-inline--fa {
+// vertical-align: -0.200em;
+// }
+
+// .rounded-social-buttons {
+// // text-align: center;        CHANGED     CHANGED     
+// }
+
+// .rounded-social-buttons .social-button {
+// display: inline-block;
+// // position: relative;
+// cursor: pointer;
+// width: 3.125rem;
+// height: 3.125rem;
+// border: 0.125rem solid transparent;
+// padding: 0;
+// text-decoration: none;
+// text-align: center;
+// color: #fefefe;
+// font-size: 1.5625rem;
+// font-weight: normal;
+// line-height: 2em;
+// border-radius: 1.6875rem;
+// transition: all 0.5s ease;
+// margin-right: 0.25rem;
+// margin-bottom: 0.25rem;
+// }
+
+// .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+// -webkit-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//         transform: rotate(360deg);
+// }
+
+// .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+// font-size: 25px;
+// }
+
+// .rounded-social-buttons .social-button.facebook {
+// background: #3b5998;
+// }
+
+// .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+// color: #3b5998;
+// background: #fefefe;
+// border-color: #3b5998;
+// }
+
+// .rounded-social-buttons .social-button.twitter {
+// background: #55acee;
+// }
+
+// .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+// color: #55acee;
+// background: #fefefe;
+// border-color: #55acee;
+// }
+
+// .rounded-social-buttons .social-button.linkedin {
+// background: #007bb5;
+// }
+
+// .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+// color: #007bb5;
+// background: #fefefe;
+// border-color: #007bb5;
+// }
+
+// .rounded-social-buttons .social-button.youtube {
+// background: #bb0000;
+// }
+
+// .rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+// color: #bb0000;
+// background: #fefefe;
+// border-color: #bb0000;
+// }
+
+// .rounded-social-buttons .social-button.instagram {
+// background: #125688;
+// }
+
+// .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+// color: #125688;
+// background: #fefefe;
+// border-color: #125688;
+// }
