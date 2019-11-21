@@ -5,7 +5,7 @@
 @font: 'Source Sans Pro', sans-serif;
 @blue: #0A2239;
 @red: #8e2735;
-@yellow:  #FAF189; 
+@yellow:#FAF189; 
 
 
 body {
@@ -60,6 +60,7 @@ nav {
   font-weight: bold;
   font-family: @font;
   text-align: center;
+  // border: 5px solid fuchsia;
 }
 
 .quote {
@@ -124,9 +125,6 @@ a:hover {//   THIS STYLES THE MENU LINKS   NOTE    THIS STYLES THE MENU LINKS   
 
 
 
-
-
-
 // =======================================================
 // NOTE    DROP-DOWN     DROP-DOWN       DROP-DOWN 
 
@@ -140,12 +138,80 @@ a:hover {//   THIS STYLES THE MENU LINKS   NOTE    THIS STYLES THE MENU LINKS   
   0%{ opacity:0; transform:translateY(-25px); }
   100%{ opacity:1; transform:translateY(0px); }
 }
-// =======================================================
-// ========================================================
+// ==================================================================
+// ==================================================================
+//  Main container- button and grid placeholder   NOTE  Main container- button and grid placeholder 
+// ==================================================================
+// ==================================================================
+.main-container {
+  width: 98vw;
+  height: 700px;
+  // border: 5px solid blue;
+}
 
-// NOTE    WORD FLIP      WORD FLIP     WORD FLIP
-// ========================================================
-// ========================================================
+.photos-articles {
+  // width: 33vw;
+  // height: 250px;
+  // border: 5px solid @red;
+  // margin-left: 25px;
+  // margin-top: 30px;
+  // border-radius: 8px;
+}
+
+
+// ==================================================================
+// ==================================================================
+//  TOOL TIP ON HOVER  NOTE  TOOL TIP ON HOVER
+// ==================================================================
+// ==================================================================
+
+
+.box {
+  position: relative;
+  display: inline-block;
+  width: 33vw;
+  height: 350px;
+  border: 5px solid @red;
+  margin-left: 25px;
+  margin-top: 30px;
+  border-radius: 8px;
+  
+}
+
+
+
+.box .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: @yellow;
+  background: @blue;
+  font-family: @font;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  text-decoration: underline;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  box-shadow: 3px 2px 3px @yellow;
+}
+
+.box:hover .tooltiptext {
+  visibility: visible;
+    box-shadow: 3px 2px 3px 3px @yellow;
+}
+
+.tooltip-first-sentence {
+  color: @red;
+}
+
+
+
+
+
+
 
 // ==================================================================
 // ==================================================================
@@ -301,12 +367,13 @@ flex-direction: column;
   height: 240px;
   display: flex;
   margin-left: 35px;
-  margin-top: 120px;
+  margin-top: 30px;
   color: @red;
   background: @blue;
   // display: inline-block;
   align-items: center;
   border-radius: 8px;
+  // border: 5px solid green;
 }
 
 @media screen and (max-width: 750px) {

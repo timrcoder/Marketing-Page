@@ -104,6 +104,44 @@ a:hover {
     transform: translateY(0px);
   }
 }
+.main-container {
+  width: 98vw;
+  height: 700px;
+}
+.box {
+  position: relative;
+  display: inline-block;
+  width: 33vw;
+  height: 350px;
+  border: 5px solid #8e2735;
+  margin-left: 25px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+.box .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #FAF189;
+  background: #0A2239;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  text-decoration: underline;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  box-shadow: 3px 2px 3px #FAF189;
+}
+.box:hover .tooltiptext {
+  visibility: visible;
+  box-shadow: 3px 2px 3px 3px #FAF189;
+}
+.tooltip-first-sentence {
+  color: #8e2735;
+}
 button {
   width: 130px;
   height: 25px;
@@ -243,7 +281,7 @@ button:hover {
   height: 240px;
   display: flex;
   margin-left: 35px;
-  margin-top: 120px;
+  margin-top: 30px;
   color: #8e2735;
   background: #0A2239;
   align-items: center;
